@@ -33,17 +33,20 @@ with open(csvpath) as csvfile:
     # Answer to Questions 4 & 5
     great_inc = max(change)
     increase_index = change.index(great_inc)
+    
+
 
     great_dec = min(change)
     decrease_index = change.index(great_dec)
+ 
 
 # Strings to be written to txt file
 str1 = "Financial Analysis\n"
 str2 = (f"Total Months: {total_months}\n")
 str3 = (f"Total: ${net_total}\n")
 str4 = (f"Average Change: ${average}\n")
-str5 = (f"Greatest Increase in profits: {increase_index} (${great_inc})\n")
-str6 = (f"Greatest Decrease in profits: {decrease_index} (${great_dec})\n")
+str5 = (f"Greatest Increase in profits: {date[increase_index +1]} (${great_inc})\n")
+str6 = (f"Greatest Decrease in profits: {date[decrease_index +1]} (${great_dec}\n")
 
 
 
@@ -63,5 +66,5 @@ print("-" *20)
 print(f"Total Months: {total_months}")
 print(f"Toatl: ${net_total}")
 print(f"Average change: ${average}")
-print(f"Greatest Increase in profits: {increase_index} (${great_inc})")
-print(f"Greatest Decrease in profits: {decrease_index} (${great_dec})")
+print(f"Greatest Increase in profits: {date[increase_index +1]} (${great_inc})")
+print(f"Greatest Decrease in profits: {date[decrease_index +1]} (${great_dec})")
