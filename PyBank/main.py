@@ -46,7 +46,7 @@ str2 = (f"Total Months: {total_months}\n")
 str3 = (f"Total: ${net_total}\n")
 str4 = (f"Average Change: ${average}\n")
 str5 = (f"Greatest Increase in profits: {date[increase_index +1]} (${great_inc})\n")
-str6 = (f"Greatest Decrease in profits: {date[decrease_index +1]} (${great_dec}\n")
+str6 = (f"Greatest Decrease in profits: {date[decrease_index +1]} (${great_dec})\n")
 
 
 
